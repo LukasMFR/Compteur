@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Empêche le défilement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; /* Utilise Roboto comme police principale */
+    background: linear-gradient(to right, #ffa751, #ffe259);
+}
+
+#compteur-container {
+    text-align: center;
+}
+
+#valeur-compteur {
+    font-size: 10em; /* Taille ajustée pour le compteur */
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.bouton-compteur, #reinitialiser {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: linear-gradient(145deg, #ff919d, #ff7272);
+}
+
+.bouton-compteur:hover, #reinitialiser:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+#reinitialiser {
+    background: linear-gradient(145deg, #6ee7b7, #34d399);
+}

@@ -54,6 +54,13 @@ body, html {
     transform: scale(1.05);
 }
 
+@media (hover: none), (any-hover: none) {
+    .bouton-compteur:hover, #reinitialiser:hover {
+        box-shadow: none;
+        transform: none;
+    }
+}
+
 #reinitialiser {
     background: linear-gradient(145deg, #6ee7b7, #34d399);
 }

@@ -18,7 +18,7 @@ _Compteur_ is a simple counter website that allows you to count up or down. It i
 ### iPhone 15 Pro - Safari Portrait Mode
 
 <p align="center">
-  <img src="screenshots/iphone-15-pro-safari-portrait.png" width="250" alt="Screenshot of the Compteur app on iPhone 15 Pro in Safari portrait mode">
+  <img src="screenshots/iphone-15-pro-safari-portrait.png" width="314" alt="Screenshot of the Compteur app on iPhone 15 Pro in Safari portrait mode">
 </p>
 
 ### iPad Pro 11 - Safari Landscape Mode

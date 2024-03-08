@@ -3,12 +3,12 @@
   "name": "Simple Counter App",
   "icons": [
     {
-      "src": "icons/lowres.webp",
+      "src": "icon/lowres.webp",
       "sizes": "48x48",
       "type": "image/webp"
     },
     {
-      "src": "icons/hd_hi.ico",
+      "src": "icon/hd_hi.ico",
       "sizes": "72x72 96x96 128x128 256x256",
       "type": "image/x-icon"
     }

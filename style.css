@@ -14,6 +14,7 @@ body, html {
     background: #ffc555 linear-gradient(to right, #ffa751, #ffe259);
     padding: var(--safe-area-inset-top) 0 var(--safe-area-inset-bottom);
     touch-action: manipulation;
+    overflow: hidden;
 }
 
 #compteur-container {

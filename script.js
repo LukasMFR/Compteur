@@ -10,14 +10,12 @@ document.getElementById('reinitialiser').addEventListener('click', function() {
     document.getElementById('valeur-compteur').innerText = '0';
 });
 
-// Code to register the service worker for your PWA
+// Service Worker registration
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('sw.js').then(function(registration) {
-            // Registration was successful
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(registration => {
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function(err) {
-            // Registration failed
+        }, err => {
             console.log('ServiceWorker registration failed: ', err);
         });
     });

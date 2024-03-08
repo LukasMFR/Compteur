@@ -3,19 +3,19 @@
   "name": "Simple Counter App",
   "icons": [
     {
-      "src": "icons/icon-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "icons/lowres.webp",
+      "sizes": "48x48",
+      "type": "image/webp"
     },
     {
-      "src": "icons/icon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "icons/hd_hi.ico",
+      "sizes": "72x72 96x96 128x128 256x256",
+      "type": "image/x-icon"
     }
   ],
-  "start_url": "/?source=pwa",
-  "background_color": "#ffc555",
+  "start_url": "/",
+  "background_color": "#FFC555",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#ffc555"
+  "theme_color": "#FFC555"
 }

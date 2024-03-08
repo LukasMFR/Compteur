@@ -11,13 +11,16 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
     <!-- PWA Manifest -->
     <link rel="manifest" href="/manifest.json">
 
     <!-- Apple-specific configurations -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Example Progressive Web App">
+    <meta name="apple-mobile-web-app-title" content="Compteur">
 
     <!-- Apple Icons -->
     <link rel="apple-touch-icon" href="/icon/lowres.webp">
@@ -45,31 +48,5 @@
     </div>
     <button id="reinitialiser">Remettre le compteur à zéro</button>
 </div>
-
-<!-- Service Worker -->
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js').then(registration => {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            }, err => {
-                console.log('ServiceWorker registration failed: ', err);
-            });
-        });
-    }
-
-    document.querySelectorAll('.bouton-compteur').forEach(bouton => {
-        bouton.addEventListener('click', function() {
-            const modificateur = parseInt(this.getAttribute('data-modificateur'), 10);
-            const valeurActuelle = parseInt(document.getElementById('valeur-compteur').innerText, 10);
-            document.getElementById('valeur-compteur').innerText = valeurActuelle + modificateur;
-        });
-    });
-
-    document.getElementById('reinitialiser').addEventListener('click', function() {
-        document.getElementById('valeur-compteur').innerText = '0';
-    });
-
-</script>
 </body>
 </html>
